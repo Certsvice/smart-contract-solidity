@@ -160,11 +160,11 @@
 	},
 	"sources": {
 		"Contracts/Cerisvice.sol": {
-			"keccak256": "0xf185aa2a78b0405c371d4e38ce8bb3c7657788246f8371beb69ea8483ccd73d5",
+			"keccak256": "0xd4a0143f1dfc68e240f6196d59ac7183808bd8cda2147c3ff497a38f2fee30d8",
 			"license": "Unlicense",
 			"urls": [
-				"bzz-raw://cf1a65bd24bef042852e5fedb5e111d6035cc7d9a43e604ac2ee1a8ef9b03d6b",
-				"dweb:/ipfs/QmVnYEBZfRpV9Mg96fY4yPXNRqY38iFbRyuGU822JKrFdi"
+				"bzz-raw://3b09937564597655c5ce14b99bdcb4f48b07932f6ff6dd988638d2d64ec5cb3a",
+				"dweb:/ipfs/QmfKvXsJxDQNjDerHbRr9RC5rC4E1vB4Z8bHJNMHvsZ7JA"
 			]
 		},
 		"Contracts/Owner.sol": {
