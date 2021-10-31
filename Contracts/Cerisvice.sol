@@ -9,9 +9,9 @@ contract Certsvice is Owner {
         address issuer;
         string hash;
     }
-
+    int private certificateId = 0;
     mapping(address => string) private universitys;
-    mapping(string => student) private students;
+    mapping(int => student) private students;
 
     //reUseFunction
     function checkInuse(address _university) private view returns (bool) {
@@ -42,11 +42,15 @@ contract Certsvice is Owner {
     
     
     //myFunction for add student
-    function addStudent(string memory _id, string memory _hash) public isUnivesity{
+    function addStudent(string memory _hash) public isUnivesity returns(int){
         student memory newStudent = student(msg.sender,_hash);
-        students[_id] = newStudent;
+        students[certificateId++] = newStudent;
+        return certificateId;
     }
-    function getStudent(string memory _id) public isUnivesity view returns (student memory){
+    function deleteStudent(int _id) public isUnivesity{
+        delete students[_id];
+    }
+    function getStudent(int _id) public view returns (student memory){
         return  students[_id];
     }
     

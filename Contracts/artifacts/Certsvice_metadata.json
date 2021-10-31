@@ -28,17 +28,18 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_id",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
 						"name": "_hash",
 						"type": "string"
 					}
 				],
 				"name": "addStudent",
-				"outputs": [],
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -76,6 +77,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "int256",
+						"name": "_id",
+						"type": "int256"
+					}
+				],
+				"name": "deleteStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "address",
 						"name": "_university",
 						"type": "address"
@@ -102,9 +116,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
+						"internalType": "int256",
 						"name": "_id",
-						"type": "string"
+						"type": "int256"
 					}
 				],
 				"name": "getStudent",
@@ -191,11 +205,11 @@
 	},
 	"sources": {
 		"Contracts/Cerisvice.sol": {
-			"keccak256": "0x03bf2561cea3863403701f80690cfb64caec82d51ec17f9282f21372cec411e2",
+			"keccak256": "0x35f5ea3792f419e66a694f9d25076e66a31279eae8c81ce5d0d9a1c7086c7ec5",
 			"license": "Unlicense",
 			"urls": [
-				"bzz-raw://1bb6589eb66c0a922de360afc8fdb16f9249cd87011965a0c69a7d53e3d5a53b",
-				"dweb:/ipfs/QmRqEwWqBLGatwDktR4A3zyqXjxyseWGVhiEEoRhCASAe4"
+				"bzz-raw://a443fa3c5b4f4659a2eaf543e1b05bddf9c535e53f7588bc0c4d661eba44ce0d",
+				"dweb:/ipfs/QmWfnyRz2iFd3m6c2pRR4ki4sVymbvk3iuhg4K7wfPewsu"
 			]
 		},
 		"Contracts/Owner.sol": {
