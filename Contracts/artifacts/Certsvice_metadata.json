@@ -100,15 +100,21 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					}
+				],
 				"name": "getStudent",
 				"outputs": [
 					{
 						"components": [
 							{
-								"internalType": "string",
-								"name": "id",
-								"type": "string"
+								"internalType": "address",
+								"name": "issuer",
+								"type": "address"
 							},
 							{
 								"internalType": "string",
@@ -116,28 +122,9 @@
 								"type": "string"
 							}
 						],
-						"internalType": "struct Certsvice.student[]",
+						"internalType": "struct Certsvice.student",
 						"name": "",
-						"type": "tuple[]"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "data",
-						"type": "string"
-					}
-				],
-				"name": "getTest",
-				"outputs": [
-					{
-						"internalType": "bytes32",
-						"name": "",
-						"type": "bytes32"
+						"type": "tuple"
 					}
 				],
 				"stateMutability": "view",
@@ -160,19 +147,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "data",
-						"type": "string"
-					}
-				],
-				"name": "setTest",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -217,11 +191,11 @@
 	},
 	"sources": {
 		"Contracts/Cerisvice.sol": {
-			"keccak256": "0x7219abbd96aba65e5ff4ee81ed70253609edd54890a0be4280d740bf260c2ee8",
+			"keccak256": "0x03bf2561cea3863403701f80690cfb64caec82d51ec17f9282f21372cec411e2",
 			"license": "Unlicense",
 			"urls": [
-				"bzz-raw://caf585f6a76c37ed7e91149de354e365ce1162aabae679da76ad9fb0fd545581",
-				"dweb:/ipfs/QmaouR7LuzWMKLrXAMatpArbW5Vi2TeVLwcN6idn6cK9A7"
+				"bzz-raw://1bb6589eb66c0a922de360afc8fdb16f9249cd87011965a0c69a7d53e3d5a53b",
+				"dweb:/ipfs/QmRqEwWqBLGatwDktR4A3zyqXjxyseWGVhiEEoRhCASAe4"
 			]
 		},
 		"Contracts/Owner.sol": {

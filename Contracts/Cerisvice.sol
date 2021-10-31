@@ -6,13 +6,12 @@ import "./Owner.sol";
 contract Certsvice is Owner {
     
     struct student{
-        string id;
+        address issuer;
         string hash;
     }
 
     mapping(address => string) private universitys;
-    mapping(address => student[]) private students;
-    mapping(string => bytes32) private s;
+    mapping(string => student) private students;
 
     //reUseFunction
     function checkInuse(address _university) private view returns (bool) {
@@ -27,7 +26,7 @@ contract Certsvice is Owner {
         _;
     }
     
-    //myFunction
+    //myFunction for university
     function addUniversity(address _university, string memory _universityName) public isOwner {
         require(checkInuse(_university), "This address is already in use");
         universitys[_university] = _universityName;
@@ -40,19 +39,15 @@ contract Certsvice is Owner {
     function getUniversity(address _university) public isOwner view returns (string memory) {
         return universitys[_university];
     }
-
+    
+    
+    //myFunction for add student
     function addStudent(string memory _id, string memory _hash) public isUnivesity{
-        student memory newStudent = student(_id,_hash);
-        students[msg.sender].push(newStudent);
+        student memory newStudent = student(msg.sender,_hash);
+        students[_id] = newStudent;
     }
-    function getStudent() public isUnivesity view returns (student[] memory){
-        return students[msg.sender];
+    function getStudent(string memory _id) public isUnivesity view returns (student memory){
+        return  students[_id];
     }
     
-    function setTest(string memory data) public {
-        s[data] = keccak256(abi.encodePacked(data));
-    }
-    function getTest(string memory data) public view returns (bytes32){
-        return s[data];
-    }
 }
