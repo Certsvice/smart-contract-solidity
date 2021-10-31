@@ -24,6 +24,7 @@ contract Owner {
         _;
     }
     
+    
     /**
      * @dev Set contract deployer as owner
      */

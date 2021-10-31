@@ -28,12 +28,12 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "id",
+						"name": "_id",
 						"type": "string"
 					},
 					{
 						"internalType": "string",
-						"name": "hash",
+						"name": "_hash",
 						"type": "string"
 					}
 				],
@@ -100,6 +100,50 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getStudent",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "id",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "hash",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Certsvice.student[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "data",
+						"type": "string"
+					}
+				],
+				"name": "getTest",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -116,6 +160,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "data",
+						"type": "string"
+					}
+				],
+				"name": "setTest",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -160,19 +217,19 @@
 	},
 	"sources": {
 		"Contracts/Cerisvice.sol": {
-			"keccak256": "0xd4a0143f1dfc68e240f6196d59ac7183808bd8cda2147c3ff497a38f2fee30d8",
+			"keccak256": "0x7219abbd96aba65e5ff4ee81ed70253609edd54890a0be4280d740bf260c2ee8",
 			"license": "Unlicense",
 			"urls": [
-				"bzz-raw://3b09937564597655c5ce14b99bdcb4f48b07932f6ff6dd988638d2d64ec5cb3a",
-				"dweb:/ipfs/QmfKvXsJxDQNjDerHbRr9RC5rC4E1vB4Z8bHJNMHvsZ7JA"
+				"bzz-raw://caf585f6a76c37ed7e91149de354e365ce1162aabae679da76ad9fb0fd545581",
+				"dweb:/ipfs/QmaouR7LuzWMKLrXAMatpArbW5Vi2TeVLwcN6idn6cK9A7"
 			]
 		},
 		"Contracts/Owner.sol": {
-			"keccak256": "0xa140e318c0e77bfc7a954653a04e65ca2085b37a4e66a33dd23572b3b786b4ce",
+			"keccak256": "0x90af61dca9ddfb676b11be070c013052da5f1fae35b41ea70276c01490fc0fc4",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://707fc0dcab5247a461d78baca03daecc88d74e5b6502dacd7059623f74ddef6e",
-				"dweb:/ipfs/QmQERuB4PdrNyMfua66NvPL1reT6XB6JM3nak41s6rpScx"
+				"bzz-raw://f0beffb91176bd899d4d5d67545918cc9d6b6c04e29be5ed761f26fabcecbaed",
+				"dweb:/ipfs/QmR4aGJSMTQu1CNVFxQQ6K4i3mZ9z3yRdG9kmc6Jo356gQ"
 			]
 		}
 	},
