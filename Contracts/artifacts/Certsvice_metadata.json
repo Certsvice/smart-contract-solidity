@@ -30,16 +30,15 @@
 						"internalType": "string",
 						"name": "_hash",
 						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
 					}
 				],
 				"name": "addStudent",
-				"outputs": [
-					{
-						"internalType": "int256",
-						"name": "",
-						"type": "int256"
-					}
-				],
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -77,9 +76,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "int256",
+						"internalType": "string",
 						"name": "_id",
-						"type": "int256"
+						"type": "string"
 					}
 				],
 				"name": "deleteStudent",
@@ -116,9 +115,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "int256",
+						"internalType": "string",
 						"name": "_id",
-						"type": "int256"
+						"type": "string"
 					}
 				],
 				"name": "getStudent",
@@ -205,11 +204,11 @@
 	},
 	"sources": {
 		"Contracts/Cerisvice.sol": {
-			"keccak256": "0x35f5ea3792f419e66a694f9d25076e66a31279eae8c81ce5d0d9a1c7086c7ec5",
+			"keccak256": "0xdc72f1c6a9aca172ba4123ce2c60cc4bb9297aef52bdd78bf90cc1bac46b58e8",
 			"license": "Unlicense",
 			"urls": [
-				"bzz-raw://a443fa3c5b4f4659a2eaf543e1b05bddf9c535e53f7588bc0c4d661eba44ce0d",
-				"dweb:/ipfs/QmWfnyRz2iFd3m6c2pRR4ki4sVymbvk3iuhg4K7wfPewsu"
+				"bzz-raw://8cdd272455c763a6d8c9e1b9f6aa4c9e9ce695e5d3c7ab0022399ef3b0a478af",
+				"dweb:/ipfs/QmcQctypAiDMkgheuH6PNnhxay5XfigNEy21mjEFamwTou"
 			]
 		},
 		"Contracts/Owner.sol": {
