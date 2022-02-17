@@ -9,6 +9,7 @@ contract Certsvice is Owner {
         address issuer;
         string hash;
     }
+    
     mapping(address => string) private universitys;
     mapping(string => student) private students;
 
@@ -41,9 +42,7 @@ contract Certsvice is Owner {
     
     //myFunction for add student
     function addStudent(string memory _hash,string memory _id) public isUnivesity {
-        student memory newStudent = student(msg.sender,_hash);
-        students[_id] = newStudent;
-
+        students[_id] = student(msg.sender,_hash);
     }
     function deleteStudent(string memory _id) public isUnivesity{
         delete students[_id];
